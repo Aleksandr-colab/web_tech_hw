@@ -1,3 +1,7 @@
-Math.round
-let user_input = Number.parseInt(prompt('Введите температуру в градусах Цельсия'));
-alert(`Цельсия: ${user_input}\nФаренгейт: ${Math.round((9 / 5) * user_input + 32)}`)
+"use strict";
+const num = Number.parseFloat(prompt("Введите температуру в градусах по Фаренгейту:"));
+printTemperature(num);
+
+function printTemperature(num) {
+    alert(`Цельсий: ${((num - 32)/1.8).toFixed(0)}, Фаренгейт: ${num}.`);
+}
